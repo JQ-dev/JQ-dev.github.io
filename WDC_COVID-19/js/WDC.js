@@ -29,7 +29,7 @@ WDC.prototype.ConsultarDatos = function(){
 
 WDC.prototype.CrearEsquemaCOVID = function(tiposDatos){
 	var columnas = [
-		{ id:"id_de_caso", alias: "ID", dataType: tiposDatos.string },
+		//{ id:"id_de_caso", alias: "ID", dataType: tiposDatos.string },
 		{ id:"fecha_de_diagn_stico", alias: "FECHA", dataType: tiposDatos.string },
 		{ id:"ciudad_de_unicaci_n", alias: "CIUD", dataType: tiposDatos.string },
 		{ id:"departamento", alias: "DPTO", dataType: tiposDatos.string },
@@ -53,7 +53,7 @@ WDC.prototype.CrearDatosCOVID= function(){
 	var tablaDatos = [];
 	var _table = {};
 	$.each(this.getRespuesta().respuesta, function(index, item){
-		_table["ID"] 		= item["id_de_caso"];
+		//_table["ID"] 		= item["id_de_caso"];
 		_table["FECHA"] 		= item["fecha_de_diagn_stico"];
 		_table["CIUD"]			= item["ciudad_de_unicaci_n"];
 		_table["DPTO"] 			= item["departamento"];
