@@ -29,7 +29,7 @@ WDC.prototype.ConsultarDatos = function(){
 
 WDC.prototype.CrearEsquemaCOVID = function(tiposDatos){
 	var columnas = [
-		{ id:"id_de_caso", alias: "ID", dataType: tiposDatos.integer },
+		{ id:"id_de_caso", alias: "ID", dataType: tiposDatos.string },
 		{ id:"fecha_de_diagn_stico", alias: "FECHA", dataType: tiposDatos.string },
 		{ id:"ciudad_de_unicaci_n", alias: "CIUD", dataType: tiposDatos.string },
 		{ id:"departamento", alias: "DPTO", dataType: tiposDatos.string },
